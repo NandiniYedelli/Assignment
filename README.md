@@ -8,5 +8,5 @@ This service processes file uploads from Cloud Storage and publishes metadata to
 - Publishes information to Pub/Sub topic
 
 ## Environment Variables
-- `PUBSUB_TOPIC`: Name of the Pub/Sub topic to publish to
-- `GOOGLE_CLOUD_PROJECT`: GCP project ID (automatically set by Cloud Run)
+- `my-assig-nan`: Name of the Pub/Sub topic to publish to
+- `my-sub`: GCP project ID (automatically set by Cloud Run)
