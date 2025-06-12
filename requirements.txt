@@ -1,0 +1,16 @@
+
+functions-framework==3.4.0
+# a lightweight web server that lets you run your Python Cloud Function locally (or on Cloud Run).
+
+google-cloud-pubsub==2.18.4
+#  Allows your app to publish or receive messages
+
+google-cloud-storage==2.10.0
+# interact with Cloud Storage: read file metadata, download files, check size, etc.
+
+cloudevents==1.10.1
+
+# Accept CloudEvents (from Storage uploads)
+# Read uploaded file metadata
+# Publish messages to Pub/Sub
+# Run properly on Cloud Run or locally using the Functions Framework
