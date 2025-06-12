@@ -1,5 +1,4 @@
-Flask==2.3.2
-gunicorn==21.2.0
+
 
 functions-framework==3.4.0
 # a lightweight web server that lets you run your Python Cloud Function locally (or on Cloud Run).
