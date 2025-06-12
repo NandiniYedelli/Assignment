@@ -56,7 +56,7 @@ def process_file_upload(cloud_event: CloudEvent) -> None:
         
         # Publish to Pub/Sub
         project_id = os.environ.get('GOOGLE_CLOUD_PROJECT')
-        topic_path = publisher.topic_path(project_id, os.environ.get('PUBSUB_TOPIC'))
+        topic_path = publisher.topic_path(project_id, os.environ.get('my-assig-nan'))
         # Publishes the message to a Pub/Sub topic as a JSON string
         
         # Convert message to JSON string
