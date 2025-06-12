@@ -75,6 +75,13 @@ def process_file_upload(cloud_event: CloudEvent) -> None:
         print(f"  - Message ID: {message_id}")
         
     except Exception as e:
-        # If anything fails, logs the error and raises it again
         print(f"Error processing file: {str(e)}")
-        raise
+        return f'Error: {str(e)}', 500
+
+@app.route('/health', methods=['GET'])
+def health_check():
+    """Health check endpoint"""
+    return 'OK', 200
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
